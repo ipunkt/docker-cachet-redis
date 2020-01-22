@@ -1,3 +1,3 @@
 FROM cachethq/docker:latest
 
-RUN cd /var/www/html && APP_LOG=errorlog php /bin/composer.phar require predis/predis
+RUN cd /var/www/html && php /bin/composer.phar require --no-scripts predis/predis
